@@ -1,7 +1,6 @@
 import {
     AddTodolistAC,
-    ChangeTodoListFilterAt,
-    ChangeTodoListTitleAC,
+    ChangeTodoListFilterAT,
     ChangeTodoListTitleAT,
     RemoveTodolistAC,
     todoListsReducer
@@ -74,7 +73,7 @@ test('correct filter of todolist should be changed', () => {
         {id: todolistId2, title: "What to buy", filter: "all"}
     ]
 
-    const action: ChangeTodoListFilterAt = {
+    const action: ChangeTodoListFilterAT = {
         type: 'CHANGE-TODOLIST-FILTER',
         value: newFilter,
         todoListID: todolistId2
