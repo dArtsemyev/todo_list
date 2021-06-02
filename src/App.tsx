@@ -9,7 +9,6 @@ export type TaskType = {
 }
 
 function App() {
-
     // BLL:
     const tasksToLearn: Array<TaskType> = [
         {id: 1, title: "HTML/CSS", isDone: true},
@@ -25,8 +24,11 @@ function App() {
     // UI:
     return (
         <div className="App">
-            <TodoList title={"What to learn"} tasks={tasksToLearn}/>
-            <TodoList title={"What to buy"} tasks={tasksToBuy}/>
+
+            <TodoList title={"What to learn"}
+                      tasks={tasksToLearn}/>
+            <TodoList title={"What to Buy"}
+                      tasks={tasksToBuy}/>
         </div>
     );
 }
